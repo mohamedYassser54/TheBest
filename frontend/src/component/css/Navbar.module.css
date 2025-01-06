@@ -1,0 +1,17 @@
+.navbar{
+    background-color: none;
+}
+.NavLink{
+    color: #000;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+
+.NavLink:hover,
+  .NavLink:focus,
+  .NavLink:active {
+     color: rgb(255, 217, 0);
+
+  }
