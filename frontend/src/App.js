@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Routes,Route,BrowserRouter} from "react-router-dom";
 
-
 import Navbars from './component/Navbar.js'
 import MovingLinesBackground from './component/MovingLinesBg.js'
 import Vote from './component/cards/Vote.js'
