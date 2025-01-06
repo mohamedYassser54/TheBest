@@ -6,7 +6,7 @@ import confetti from 'canvas-confetti';
 import '../css/cards.css';
 
 const Card = () => {
-  const [errorMessage, setErrorMessage] = useState('');
+  // const [errorMessage, setErrorMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -15,22 +15,22 @@ const Card = () => {
     const votedCards = JSON.parse(localStorage.getItem('votedCards')) || [];
     
     if (votedCards.includes(item.id)) {
-      setErrorMessage('You can only vote for one card');
-      setFadeOut(false); 
-      setTimeout(() => {
-        setFadeOut(true); 
-      }, 3000);
+      alert('You can only vote for one card');
+      // setFadeOut(false); 
+      // setTimeout(() => {
+      //   setFadeOut(true); 
+      // }, 3000);
       return;
 
      
     }
   
     if (votedCards.length > 0) {
-      setErrorMessage('You can only vote for one card');
-      setFadeOut(false); 
-      setTimeout(() => {
-        setFadeOut(true); 
-      }, 3000);
+      alert('You can only vote for one card');
+      // setFadeOut(false); 
+      // setTimeout(() => {
+      //   setFadeOut(true); 
+      // }, 3000);
       return;
     }
   
@@ -77,7 +77,7 @@ const Card = () => {
   return (
   
     <div className="allcard">
-         {errorMessage && (
+         {/* {errorMessage && (
         <Alert
           variant="danger"
           style={{
@@ -92,7 +92,7 @@ const Card = () => {
         >
           {errorMessage}
         </Alert>
-      )}
+      )} */}
       {successMessage && (
         <Alert
           variant="success"
