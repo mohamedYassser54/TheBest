@@ -34,7 +34,7 @@ const Card = () => {
       return;
     }
   
-    fetch('http://localhost:8083/vote', {
+    fetch('https://the-best-server.vercel.app/vote', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
