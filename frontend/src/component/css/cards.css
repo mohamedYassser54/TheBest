@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center; 
   padding: 10px;
+  margin-top: 50px;
 }
 
 .allcard {
@@ -66,7 +67,7 @@
 
 .card .bottom .content .name {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #4a4a4a; 
   font-weight: bold;
 }
@@ -161,37 +162,36 @@
 }
 
 
-
 /* TheBest */
-.TheBest{
+.TheBest {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 60px;
 }
-.TheBest h6{
+.TheBest h6 {
   font-size: 14px;
 }
-.TheBest img{
-  width: 300px;
+.TheBest img {
+  width: 350px;
 }
-.cardTheBest{
+.cardTheBest {
   width: 250px;
   color: #fff;
   padding: 12px;
   border-radius: 15px;
-  border: 1px solid rgb(218, 165, 32);
-  background: linear-gradient( to top right, rgb(255, 215, 0),rgb(255, 219, 100));
+  border: 1px solid #4a90e2;
+  background: linear-gradient(to top right, #4a90e2, rgba(74, 144, 226, 0.7));
 }
 
-
 /* thebestlink */
-.thebestlink{
+.thebestlink {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.thebestlink a{
+.thebestlink a {
   width: 100px;
   padding: 5px;
   border-radius: 10px;
@@ -199,17 +199,18 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #388eff;
+  background-color: #4a90e2;
   color: #fff;
   text-decoration: none;
 }
-.thebestlink span{
+.thebestlink span {
   font-weight: bold;
 }
-.thebestlink .Comment{
+.thebestlink .Comment {
   font-weight: bold;
-  background-color: #fffeee;
-  color: #000;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #fff;
+  
 }
 
 
