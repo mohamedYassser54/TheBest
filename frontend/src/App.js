@@ -1,16 +1,34 @@
-import React from 'react';
+import React, { useState } from "react";
 
 import { Routes,Route,BrowserRouter} from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import Navbars from './component/Navbar.js'
 import MovingLinesBackground from './component/MovingLinesBg.js'
 import Vote from './component/cards/Vote.js'
 import Results from './component/cards/Results.js'
 const App = () => {
+  const [isHuman, setIsHuman] = useState(false);
+
+  const handleCaptcha = (value) => {
+    if (value) {
+      setIsHuman(true);
+    } else {
+      setIsHuman(false);
+    }
+  };
   return(
   <BrowserRouter>
     <MovingLinesBackground />
-  <div className="App">
+    <div className="App">
+    {!isHuman ? (
+          <div style={{ textAlign: "center", marginTop: "50px" }}>
+            <ReCAPTCHA
+              sitekey="6Lc3M7IqAAAAANA0kn_14FAanZvb5hQyKQmCAIhL" 
+              onChange={handleCaptcha}
+            />
+          </div>
+        ) : (
       <Routes>
        <Route path="/" element={
         <div>
@@ -29,7 +47,7 @@ const App = () => {
       
 
       </Routes>
-      
+      )}
   </div>
   
   </BrowserRouter>
