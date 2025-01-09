@@ -49,7 +49,7 @@ app.get('/',(re,res)=> {
 
 
 
-app.get('/vote',(req,res)=>{
+app.get('/voteids',(req,res)=>{
   const sql = "SELECT *  FROM `candidates`";
   db.query(sql,(err,data)=>{
       if(err) return res.json(err);
@@ -60,7 +60,7 @@ app.get('/vote',(req,res)=>{
 
 
 
-app.post('/vote', (req, res) => {
+app.post('/voteids', (req, res) => {
   const { id, name, description, img, votes } = req.body;
 
   const query = `

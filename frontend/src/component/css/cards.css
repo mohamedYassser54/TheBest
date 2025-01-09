@@ -246,6 +246,8 @@
 }
 
 
+
+
 @media (max-width: 768px) {
   .card {
     width: 280px;
@@ -271,9 +273,21 @@
   
  
 }
-@media (max-width: 582px) {
+@media (max-width: 602px) {
+  .TheBest{
+   
+    display: flex;
+    flex-direction: column;
+  }
   .cardTheBest{
-    width: 200px;
+    width: 90%;
+    /* margin-bottom: 50px; */
+    position: relative;
+    bottom: 50px;
+  }
+  .TheBest img {
+    width: 100%;
+    /* width: 250px; */
   }
   .thebestlink a{
     width: 50px;

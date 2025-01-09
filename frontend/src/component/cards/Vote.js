@@ -12,7 +12,7 @@ const Card = () => {
 
 
   const handleVote = (item) => {
-    const votedCards = JSON.parse(localStorage.getItem('votedCards')) || [];
+    const votedCards = JSON.parse(localStorage.getItem('votedCards2')) || [];
     
     if (votedCards.includes(item.id)) {
       alert('You can only vote for one card');
@@ -34,7 +34,7 @@ const Card = () => {
       return;
     }
   
-    fetch('https://the-best-server.vercel.app/vote', {
+    fetch('https://the-best-server.vercel.app/voteids', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -62,7 +62,7 @@ const Card = () => {
           });
   
           votedCards.push(item.id);
-          localStorage.setItem('votedCards', JSON.stringify(votedCards));
+          localStorage.setItem('votedCards2', JSON.stringify(votedCards));
         } else {
           alert('Failed to submit vote.');
         }

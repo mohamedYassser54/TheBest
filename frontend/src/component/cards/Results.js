@@ -8,7 +8,7 @@ const Results = () => {
 
   useEffect(() => {
    
-    axios.get('https://the-best-server.vercel.app/vote')
+    axios.get('https://the-best-server.vercel.app/voteids')
       .then(response => {
         setCandidates(response.data);
       })
