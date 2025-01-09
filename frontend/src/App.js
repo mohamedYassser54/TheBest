@@ -24,7 +24,7 @@ const App = () => {
     {!isHuman ? (
           <div style={{ textAlign: "center", marginTop: "50px" }}>
             <ReCAPTCHA
-              sitekey="6Lc3M7IqAAAAANA0kn_14FAanZvb5hQyKQmCAIhL" 
+              sitekey="6LdmNbIqAAAAANKD1PABM1aPw7La1puyiVZy3A6C" 
               onChange={handleCaptcha}
             />
           </div>
