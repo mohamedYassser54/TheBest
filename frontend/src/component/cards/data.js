@@ -54,6 +54,7 @@ import img37 from './images/37.jpg'
 import img38 from './images/38.jpg'
 import img39 from './images/39.jpg'
 import img40 from './images/40.jpg'
+import img41 from './images/41.jpg'
 
 
 
@@ -322,6 +323,12 @@ const data=[
     img:img40,
     name:"عبد الله شعبان فتحي نجيب زناتي",
     Description:"  الورديان الرياضي"
+    },
+    {
+    id:41,
+    img:img41,
+    name:"إبراهيم عادل ",
+    Description:"بيراميدز"
     },
    
 ]
