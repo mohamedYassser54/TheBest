@@ -230,7 +230,12 @@ const data=[
 
 
 
-   
+    {
+    id:26,
+    img:img26,
+    name:"زياد وائل الشحات جبر ",
+    Description:" مصري السلوم"
+    },
     {
     id:27,
     img:img27,
@@ -301,12 +306,12 @@ const data=[
     name:"محمد السيد محمد السيد",
     Description:" شباب قنا "
     },
-    {
-    id:38,
-    img:img38,
-    name:"زياد وائل الشحات جبر ",
-    Description:" مصري السلوم"
-    },
+    // {
+    // id:38,
+    // img:img38,
+    // name:"زياد وائل الشحات جبر ",
+    // Description:" مصري السلوم"
+    // },
     {
         id:39,
         img:img39,
