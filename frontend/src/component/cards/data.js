@@ -230,12 +230,7 @@ const data=[
 
 
 
-    {
-    id:26,
-    img:img26,
-    name:"زياد وائل الشحات جبر ",
-    Description:" مصري السلوم"
-    },
+   
     {
     id:27,
     img:img27,
